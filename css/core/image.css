@@ -1,0 +1,27 @@
+.image-resize{
+float: left;
+width: 100%;
+max-width: 100%;
+
+}
+
+.image-20x20{
+	width: 20px;
+	height: 20px;
+}
+.image-min20x20{
+	min-width: 20px;
+	height: 20px;
+}
+
+.image-action{
+	position: absolute;
+	left: 50%;
+	list-style: none;
+	top: 50%;
+	padding: 0;
+}
+
+.image-action li{
+	display: inline;
+}

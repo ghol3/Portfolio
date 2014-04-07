@@ -1,0 +1,30 @@
+.i-icon{
+
+}
+
+i.fb-icon:before{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	content:"";
+	background: url('C:/Users/ghol3/Desktop/Portfolio/icons/fb-icon.png');
+	background-size: 100%;
+}
+
+i.tw-icon:before{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	content:"";
+	background: url('C:/Users/ghol3/Desktop/Portfolio/icons/tw-icon.png');
+	background-size: 100%;
+}
+
+i.list-icon:before{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	content:"";
+	background: url('C:/Users/ghol3/Desktop/Portfolio/icons/list.png');
+	background-size: 100%;
+}

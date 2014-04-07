@@ -1,0 +1,46 @@
+body{
+	background: #e1e3e4;
+}
+#top-menu{
+	background: #f4f4f4;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+}
+
+#page{
+	margin-top: 50px;
+}
+
+#slider{
+	height: 500px;
+	background: rgb(0,0,0);
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#slider ul{
+	list-style: none;
+}
+
+#slider ul li{
+	list-style: none;
+}
+
+#d1{
+	//background: rgb(255,0,0);
+	height:  100px;
+}
+#d2{
+	//background: rgb(0,255,0);
+	min-height:  100px;
+    
+}
+#d3{
+	//background: rgb(0,0,255);
+	min-height:  100px;
+}

@@ -1,0 +1,107 @@
+#menu-inline { 
+	list-style-type: none; 
+	text-transform: uppercase; 
+	height: 50px; 
+	padding: 0; 
+	margin: 0; 
+	float: right;
+	margin-right: 50px;
+}
+#menu-inline li { 
+	float: left; 
+	position: relative; 
+	padding: 0; 
+	line-height: 50px; 
+	display: inline;
+}
+#menu-inline li:hover { 
+	background: #d7d9d8;
+}
+#menu-inline li a { 
+	display: block; 
+	padding: 0 15px; 
+	color: #303030;
+	text-decoration: none; 
+}
+#menu-inline li a:hover { 
+	color: #000; 
+}
+#menu-inline li ul { 
+	opacity: 0; 
+	position: absolute; 
+	left: 0; 
+	background: #303030; 
+	list-style-type: none; 
+	padding: 0; 
+	margin: 0;
+	box-shadow: 
+		10px 0px 10px -7px rgba(0,0,0,0.5),
+    	-10px 0px 10px -7px rgba(0,0,0,0.5),
+    	0px 10px 10px -7px rgba(0,0,0,0.5);
+}
+#menu-inline li:hover ul { 
+	opacity: 1; 
+}
+#menu-inline li ul li { 
+	float: none; 
+	position: static; 
+	height: 0; 
+	line-height: 0; 
+	background: none; 
+}
+#menu-inline li:hover ul li { 
+	height: 30px; 
+	line-height: 30px; 
+}
+#menu-inline li ul li a { 
+	background: #d7d9d8;		/* bg for sub-menu*/ 
+	color: #000;			/* text color for sub-menu*/
+}
+#menu-inline li ul li a:hover { 
+	background: #666; 		/**/
+	color: #eee;			/**/
+}
+
+#menu-inline li { 
+	-webkit-transition: all 0.2s; 
+}
+#menu-inline li a { 
+	-webkit-transition: all 0.5s; 
+}
+#menu-inline li ul { 
+	-webkit-transition: all 1s; 
+}
+#menu-inline li ul li { 
+	-webkit-transition: height 0.5s; 
+}
+
+
+
+/* button menu */
+
+.button-menu{
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	right: -250px;
+	top: 0;
+	transition: all 0.5s;
+	background: #343434;
+}
+
+.button-menu:hover{
+	right: 0;
+}
+
+.button-for-menu{
+	width: 50px;
+	height: 50px;
+	position:absolute;
+	background:;
+	left: -50px;
+	background: #343434;
+}
+
+.button-menu .menu{
+
+}
