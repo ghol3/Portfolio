@@ -2,6 +2,8 @@
 @import url('core/image.css');
 @import url('core/icons.css');
 @import url('core/menus.css');
+@import url('core/lists.css');
+@import url('core/backgrounds.css');
 
 @font-face {
   font-family: Roboto-100;
