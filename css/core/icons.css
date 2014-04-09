@@ -28,3 +28,12 @@ i.list-icon:before{
 	background: url('C:/Users/ghol3/Desktop/Portfolio/icons/list.png');
 	background-size: 100%;
 }
+
+i.dropdown-icon:before{
+	display: inline-block;
+	width:10px;
+	height: 10px;
+	content:"";
+	background: url('C:/Users/ghol3/Desktop/Portfolio/icons/dropdown-icon.png') no-repeat;
+	background-size: 100%;
+}

@@ -3,7 +3,8 @@
 @import url('core/icons.css');
 @import url('core/menus.css');
 @import url('core/lists.css');
-@import url('core/backgrounds.css');
+@import url('core/colors.css');
+@import url('core/text.css');
 
 @font-face {
   font-family: Roboto-100;
@@ -61,5 +62,10 @@
   src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/t6Nd4cfPRhZP44Q5QAjcC4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
 }
 body{
-	font-family: Roboto-100;
+	font-family: Roboto-300;
+}
+
+p{
+  margin: 0;
+  padding: 0;
 }

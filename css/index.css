@@ -3,12 +3,15 @@ body{
 }
 #top-menu{
 	background: #f4f4f4;
-	height: 50px;
+	height: 60px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	padding: 0;
+	border-bottom: 1px solid #d2d6d5;
+	font-size: 14px;
+	z-index: 1000;
 }
 
 #page{
@@ -43,4 +46,18 @@ body{
 #d3{
 	//background: rgb(0,0,255);
 
+}
+
+.logo{
+
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+
+}
+
+.logo img{
+	height: 20px;
+
+	padding-left: 10px;
 }

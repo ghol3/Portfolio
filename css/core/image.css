@@ -1,12 +1,15 @@
 .image-resize{
-float: left;
-width: 100%;
-max-width: 100%;
-max-height: 600px;
+	vertical-align: top;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	max-height: 600px;
 
+	transition: all 0.25s linear;
+	-webkit-transform: translateZ(0);
 }
 
-.div-resize:hover img{
+.div-resize:hover .image-resize{
 	opacity: 0.7;
 }
 
@@ -17,10 +20,31 @@ max-height: 600px;
 .image-40x40{
 	width: 40px;
 	height: 40px;
-
+	transition: 0.5s;
 }
 .image-min20x20{
 	min-width: 20px;
 	height: 20px;
 }
 
+.div-resize ul{
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.div-resize:hover ul{
+	visibility: visible;
+	opacity: 1;
+}
+
+.grayscale{
+	filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+.grayscale:hover{
+	filter: none;
+    -webkit-filter: grayscale(0);
+}
