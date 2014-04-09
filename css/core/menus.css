@@ -31,7 +31,7 @@
 	position: absolute;
 	min-width: 205px; 
 	left: 0; 
-	background: #303030; 
+	
 	list-style-type: none; 
 	padding: 0; 
 	margin: 0;
@@ -50,18 +50,19 @@
 	float: none; 
 	line-height: 45px;
 	position: static; 
-	background: none; 
+
+	border-bottom: 1px solid #444;
 }
 #menu-inline li:hover ul li { 
 	line-height: 45px; 
 }
-#menu-inline li ul li a { 
-	background: #d7d9d8;		/* bg for sub-menu*/ 
-	color: #000;			/* text color for sub-menu*/
+#menu-inline li ul li a { 	
+	background: #303030; 	/* bg for sub-menu*/ 
+	color: #EEE;			/* text color for sub-menu*/
 }
 #menu-inline li ul li a:hover { 
-	background: #666; 		/**/
-	color: #eee;			/**/
+	background-color: #222;	/**/
+	color: #FFF;			/**/
 }
 
 #menu-inline li { 
@@ -78,6 +79,37 @@
 }
 
 
+
+
+
+#menu-inline-small { 
+	list-style-type: none; 
+	text-transform: uppercase; 
+	height: 60px; 
+	padding: 0; 
+	margin: 0; 
+	float: right;
+
+}
+#menu-inline-small li { 
+	float: left; 
+	position: relative; 
+	padding: 0; 
+	line-height: 60px; 
+	display: inline;
+}
+#menu-inline-small li:hover { 
+	background: #d7d9d8;
+}
+#menu-inline-small li a { 
+	display: block; 
+	padding: 0 15px; 
+	color: #303030;
+	text-decoration: none; 
+}
+#menu-inline-small li a:hover { 
+	color: #000; 
+}
 
 /* button menu */
 
@@ -142,6 +174,10 @@
 		display: none;
 	}
 
+	#menu-inline-small{
+		display: none;
+	}
+
 	.static-menu{
 		display: none;
 	}
@@ -157,8 +193,31 @@
 		display: none;
 	}
 
+	#menu-inline-small{
+		display: none;
+	}
+
 	.static-menu{
 		display: none;
+	}
+
+	.button-menu{
+		display: inline-block;
+	}
+}
+
+@media (min-width: 400px) {
+
+	#menu-inline{
+		display: none;
+	}
+
+	#menu-inline-small{
+		display: none;
+	}
+
+	.static-menu{
+		display: inline-block;
 	}
 
 	.button-menu{
@@ -170,6 +229,10 @@
 
 	#menu-inline{
 		display: none;
+	}
+
+	#menu-inline-small{
+		display: inline-block;
 	}
 
 	.static-menu{
@@ -187,6 +250,10 @@
 		display: none;
 	}
 
+	#menu-inline-small{
+		display: inline-block;
+	}
+
 	.static-menu{
 		display: inline-block;
 	}
@@ -200,6 +267,10 @@
 
 	#menu-inline{
 		display: inline-block;
+	}
+
+	#menu-inline-small{
+		display: none;
 	}
 
 	.static-menu{
@@ -216,6 +287,10 @@
 
 	#menu-inline{
 		display: inline-block;
+	}
+
+	#menu-inline-small{
+		display: none;
 	}
 
 	.static-menu{

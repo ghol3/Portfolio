@@ -48,3 +48,7 @@
 	filter: none;
     -webkit-filter: grayscale(0);
 }
+
+.image-action li img{
+	cursor: pointer;
+}
