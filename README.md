@@ -1,6 +1,5 @@
-
 <html>
-	<!-- HEAD -->
+
 	<head>
 		<link rel="stylesheet" href="css/core.css">
 		<link rel="stylesheet" href="css/index.css">
@@ -24,9 +23,7 @@
 			
 		</script>
 	</head>
-	<!-- /HEAD -->
 
-	<!-- BODY -->
 	<body>
 		<header>
 			<div class="div-100" id="top-menu">
