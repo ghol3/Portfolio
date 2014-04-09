@@ -1,36 +1,7 @@
 Portfolio
 =========
 ```html
-<!DOCTYPE html>
-<html>
-	<!-- HEAD -->
-	<head>
-		<link rel="stylesheet" href="css/core.css">
-		<link rel="stylesheet" href="css/index.css">
-		<script src="js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function() {
-			var state = true;
 
-			$("#button-for-menu").click(function () {
-				
-			   	if (state) {
-			        $('.button-menu').css('right', '0px');
-			        state = false;
-			    }
-			    else {
-			          $('.button-menu').css('right', '-250px');
-			          state = true;
-			    }
-			});
-		});
-			
-		</script>
-	</head>
-	<!-- /HEAD -->
-
-	<!-- BODY -->
-	<body>
 		<header>
 			<div class="div-100" id="top-menu">
 				<div class="logo">
@@ -146,6 +117,4 @@ Portfolio
 		<footer>
 
 		</footer>
-	</body>
-	<!-- /BODY -->
-</html>
+
