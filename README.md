@@ -1,4 +1,4 @@
-<html>
+```html
 
 	<head>
 		<link rel="stylesheet" href="css/core.css">
@@ -141,5 +141,4 @@
 
 		</footer>
 	</body>
-	<!-- /BODY -->
-</html>
+
