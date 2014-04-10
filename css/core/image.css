@@ -9,7 +9,7 @@
 	-webkit-transform: translateZ(0);
 }
 
-.div-resize:hover .image-resize{
+.image-resize-bg:hover .image-resize{
 	opacity: 0.7;
 }
 
@@ -33,7 +33,7 @@
 	transition: all 0.5s;
 }
 
-.div-resize:hover ul{
+.image-resize-bg:hover ul{
 	visibility: visible;
 	opacity: 1;
 }

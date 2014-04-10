@@ -61,3 +61,14 @@ body{
 
 	padding-left: 10px;
 }
+
+
+#bot-footer {
+   background: #303030;
+   
+   min-width: 100%;	
+   display: block;
+
+   height: 350px;
+}
+

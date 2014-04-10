@@ -57,7 +57,8 @@
 	line-height: 45px; 
 }
 #menu-inline li ul li a { 	
-	background: #303030; 	/* bg for sub-menu*/ 
+	background: #303030;
+	border-bottom: 1px solid #444; 	/* bg for sub-menu*/ 
 	color: #EEE;			/* text color for sub-menu*/
 }
 #menu-inline li ul li a:hover { 

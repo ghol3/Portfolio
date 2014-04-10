@@ -23,19 +23,13 @@
 .div-10 { width: 10%; }
 
 @media (max-width: 320px){
-	body{
-		background: rgb(255,0,255);
-	}
-	
+
 	.div-resize{
 		width: 100%;
 	}
 }
 
 @media (min-width: 320px) {
-	body{
-		background: rgb(50,50,50);
-	}
 
 	.div-resize{
 		width: 100%;
@@ -43,9 +37,6 @@
 }
 
 @media (min-width: 625px) {
-	body{
-		background: rgb(100,100,100);
-	}
 
 	.div-resize{
 		width: 50%;
@@ -53,9 +44,6 @@
 }
 
 @media (min-width: 980px) {
-	body{
-		background: rgb(100,100,100);
-	}
 
 	.div-resize{
 		width: 33.333333333333333%;
@@ -63,9 +51,6 @@
 }
 
 @media (min-width: 1100px) {
-	body{
-		background: rgb(150,150,150);
-	}
 
 	.div-resize{
 		width: 33.333333%;
@@ -73,12 +58,8 @@
 }
 
 @media (min-width: 1700px) {
-	body{
-		background: rgb(200,200,200);
-	}
 
 	.div-resize{
 		width: 25%;
 	}
-	
 }
