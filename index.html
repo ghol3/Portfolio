@@ -20,9 +20,20 @@
 			          state = true;
 			    }
 			});
-		});
-			
+		});		
 		</script>
+
+		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
+		<script type="text/javascript">
+		$(function() {
+		    // setup ul.tabs to work as tabs for each div directly under div.panes
+		    $("ul.tabs").tabs("div.panes > div");
+		});
+		</script>
+
+
+
 	</head>
 	<!-- /HEAD -->
 
@@ -96,12 +107,23 @@
 			<div class="div-resize" id="d1">
 				<div class="image-resize-bg">
 					<img width="459" height="330" src="images/web-1.png" class="image-resize">
+					<ul class="image-action">
+						<li><a href="#"></a>M</li>
+						<li><a href="#"></a>M</li>
+						<li><a href="#"></a>M</li>
+					</ul>
 				</div>
-				<ul class="image-action">
-					<li><a href="#"></a>M</li>
-					<li><a href="#"></a>M</li>
-					<li><a href="#"></a>M</li>
-				</ul>
+				<!--
+				<div>
+					<p>lijhdfjh jdhf ks</p>
+					<p>fhskjdhfksjdhfksjdhfksjdhf ksjhdf skdjhf skdjfh sdjfh skdfjhsdf skdjfhsd</p>
+					<div>
+						<ul class="">
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				-->
 			</div>
 			<div class="div-resize" id="d2">
 				<div class="image-resize-bg">
@@ -146,15 +168,18 @@
 
 
 		<footer>
-			<div id="bot-footer" class="div-100">
-			
-				<ul class="footer-menu">
-					<li>About us</li>
-					<li>Video</li>
-					<li>Contact</li>
-					<li>Social Networks</li>
-				</ul>
-			</div>
+			<ul class="tabs">
+    <li><a href="#">Tab 1</a></li>
+    <li><a href="#">Tab 2</a></li>
+    <li><a href="#">Tab 3</a></li>
+  </ul>
+ 
+  <!-- tab "panes" -->
+  <div class="panes">
+    <div>pane 1 content</div>
+    <div>pane 2 content</div>
+    <div>pane 3 content</div>
+  </div>
 		</footer>
 	</body>
 	<!-- /BODY -->

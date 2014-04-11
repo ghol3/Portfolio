@@ -65,10 +65,23 @@ body{
 
 #bot-footer {
    background: #303030;
-   
+   position: relative;
    min-width: 100%;	
    display: block;
 
    height: 350px;
+}
+
+.bottom{
+	bottom: 0;
+	position: absolute;
+}
+
+.width-100{
+	width: 100%;
+}
+
+.left-0{
+	left: 0;
 }
 

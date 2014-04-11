@@ -13,6 +13,7 @@
 	padding: 0; 
 	line-height: 60px; 
 	display: inline;
+	cursor: pointer;
 }
 #menu-inline li:hover { 
 	background: #d7d9d8;
@@ -166,6 +167,62 @@
 }
 
 
+
+
+
+.footer-menu { 
+	list-style-type: none; 
+	text-transform: uppercase; 
+	height: 30px; 
+	padding: 0; 
+	margin: 0; 
+
+
+}
+.footer-menu li { 
+	float: left; 
+	position: relative; 
+	padding: 0; 
+	line-height: 30px; 
+	display: inline;
+	cursor: pointer;
+
+}
+.footer-menu li:hover { 
+	background: #111;
+}
+.footer-menu li a { 
+	display: block; 
+	padding: 0 15px; 
+	color: #CCC;
+	text-decoration: none; 
+}
+.footer-menu li a:hover { 
+	color: #FFF; 
+}
+
+.footer-menu li { 
+	-webkit-transition: all 0.2s; 
+}
+.footer-menu li a { 
+	-webkit-transition: all 0.5s; 
+}
+
+.menu-active{
+	background: url('C:/Users/ghol3/Desktop/Portfolio/icons/footer-list-icon.png');
+	position: absolute;
+	width:24px;
+	height: 14px;
+	top: 0;
+	left: 50%;
+	margin-left: -12px;
+	margin-top: -14px;
+}
+
+.text-center{
+	margin: 0 auto;
+	display: inline;
+}
 
 
 

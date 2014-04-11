@@ -5,6 +5,7 @@
 @import url('core/lists.css');
 @import url('core/colors.css');
 @import url('core/text.css');
+@import url('core/tooltips.css');
 
 @font-face {
   font-family: Roboto-100;
