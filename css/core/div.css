@@ -1,11 +1,18 @@
-.div-100, .div-90, .div-80, .div-70, .div-66, .div-60, .div-50, .div-40, .div-33, .div-30, .div-20, .div-10, .div-resize{
+ .div-90, .div-80, .div-70, .div-66, .div-60, .div-50, .div-40, .div-33, .div-30, .div-20, .div-10, .div-resize{
 	float: left;
 	box-sizing: border-box; 
 	padding: 0.5%;
 }
 
+.div-100{
+	box-sizing: border-box;
+	padding: 0.5%;
+
+}
+
 .div-resize{
 	position: relative;
+	display: table;
 }
 
 

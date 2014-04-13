@@ -1,5 +1,13 @@
-body{
+html, body{
 	background: #e1e3e4;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.all{
+	min-height: 100%;
+	position: relative;
+
 }
 #top-menu{
 	background: #f4f4f4;
@@ -16,6 +24,9 @@ body{
 
 #page{
 	margin-top: 50px;
+	padding-bottom: 300px;
+	display: block;
+	overflow: auto;
 }
 
 #slider{
@@ -69,15 +80,17 @@ body{
 
 #bot-footer {
    background: #303030;
-   position: relative;
+   position: absolute;
+   height: 300px;
    min-width: 100%;	
-   display: inline-block;
    left: 0;
+   bottom: 0;
    -webkit-transition: max-height 0.3s ease-in-out, box-shadow 0.6s linear;
     -moz-transition: max-height 0.3s ease-in-out, box-shadow 0.6s linear;
     -o-transition: max-height 0.3s ease-in-out, box-shadow 0.6s linear;
     -ms-transition: max-height 0.3s ease-in-out, box-shadow 0.6s linear;
     transition: max-height 0.3s ease-in-out, box-shadow 0.6s linear;
+    
 }
 
 .bottom{
