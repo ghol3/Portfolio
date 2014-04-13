@@ -14,9 +14,12 @@
 	line-height: 60px; 
 	display: inline;
 	cursor: pointer;
+	transition: height 0.5s;
 }
 #menu-inline li:hover { 
-	background: #d7d9d8;
+
+
+	box-shadow: 0 -5px #0084b4 inset;
 }
 #menu-inline li a { 
 	display: block; 
@@ -173,11 +176,11 @@
 .footer-menu { 
 	list-style-type: none; 
 	text-transform: uppercase; 
-	height: 30px; 
+	height: 30px;
 	padding: 0; 
 	margin: 0; 
-
-
+	bottom: 0;
+	position: absolute;
 }
 .footer-menu li { 
 	float: left; 
@@ -207,6 +210,29 @@
 .footer-menu li a { 
 	-webkit-transition: all 0.5s; 
 }
+
+.footer-content{
+	width: 100%;
+}
+
+.footer-img{
+	background: url('C:/Users/ghol3/Desktop/Portfolio/images/footer-img.png');
+	height: 250px;
+	vertical-align: middle;
+}
+.x{
+	height: 500px;
+}
+
+.y{
+	height: 100px;
+}
+
+.z{
+	height: 350px;
+}
+
+
 
 .menu-active{
 	background: url('C:/Users/ghol3/Desktop/Portfolio/icons/footer-list-icon.png');
