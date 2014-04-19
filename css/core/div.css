@@ -1,5 +1,5 @@
- .div-90, .div-80, .div-70, .div-66, .div-60, .div-50, .div-40, .div-33, .div-30, .div-20, .div-10, .div-resize{
-	float: left;
+ .div-90, .div-80, .div-70, .div-66, .div-60, .div-50, .div-40, .div-33, .div-30, .div-20, .div-10,{
+	display: inline-block;
 	box-sizing: border-box; 
 	padding: 0.5%;
 }
@@ -11,9 +11,14 @@
 }
 
 .div-resize{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 0.5%;
 	position: relative;
-	display: table;
 }
+
+
 
 
 .div-100 { width: 100%; }
@@ -46,21 +51,21 @@
 @media (min-width: 625px) {
 
 	.div-resize{
-		width: 50%;
+		width: 49%;
 	}
 }
 
 @media (min-width: 980px) {
 
 	.div-resize{
-		width: 33.333333333333333%;
+		width: 33%;
 	}
 }
 
 @media (min-width: 1100px) {
 
 	.div-resize{
-		width: 33.333333%;
+		width: 33%;
 	}
 }
 

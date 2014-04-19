@@ -9,6 +9,10 @@
 	-webkit-transform: translateZ(0);
 }
 
+.image-resize-bg{
+	position: relative;
+}
+
 .image-resize-bg:hover .image-resize{
 	opacity: 0.7;
 }
@@ -39,14 +43,18 @@
 }
 
 .grayscale{
+
 	filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+   	border-radius: 100%; 
 }
+
 
 .grayscale:hover{
 	filter: none;
     -webkit-filter: grayscale(0);
+    transform: scale(.9);
 }
 
 .image-action li img{

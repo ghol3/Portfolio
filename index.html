@@ -22,7 +22,7 @@
 			});
 		});		
 		</script>
-
+		<!--
 		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 
 		<script type="text/javascript">
@@ -31,8 +31,44 @@
 		    $("ul.tabs").tabs("div.panes > div");
 		});
 		</script>
+	-->
+		<script>
+		$(document).ready(function() {
+			$(".footer-menu > li").click(function(){
+				var index = $(".footer-menu > li").index(this);
+				changeFooter(index);
 
+			});
+			$(".footer-menu-small > li").click(function(){
+				var index = $(".footer-menu-small > li").index(this);
+				changeFooter(index);
+			});
 
+			function changeFooter(index){
+				$(".footer-content > div.active").removeClass('active');
+				var el = $(".footer-content > div").eq(index);
+				el.addClass('active');
+				$("#page").css("padding-bottom", $(".footer-content").height() + 15);
+			}
+		});
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			var state = true;
+
+			$("#bot-button-for-menu").click(function () {
+				
+			   	if (state) {
+			        $('.bot-button-menu').css('right', '0px');
+			        state = false;
+			    }
+			    else {
+			          $('.bot-button-menu').css('right', '-250px');
+			          state = true;
+			    }
+			});
+		});		
+		</script>
 
 
 	</head>
@@ -110,34 +146,41 @@
 				<div class="image-resize-bg">
 					<img width="459" height="330" src="images/web-1.png" class="image-resize">
 					<ul class="image-action">
-						<li><a href="#"></a>M</li>
-						<li><a href="#"></a>M</li>
-						<li><a href="#"></a>M</li>
-					</ul>
-				</div>
-				<!--
-				<div>
-					<p>lijhdfjh jdhf ks</p>
-					<p>fhskjdhfksjdhfksjdhfksjdhf ksjhdf skdjhf skdjfh sdjfh skdfjhsdf skdjfhsd</p>
-					<div>
-						<ul class="">
-							<li></li>
-						</ul>
-					</div>
-				</div>
-				-->
-			</div>
-			<div class="div-resize" id="d2">
-				<div class="image-resize-bg">
-					<img width="459" height="330" src="images/web-1.png" class="image-resize">
-					<ul class="image-action">
-						<li><a href="#"></a><img src="icons/fb.png" class="image-40x40 grayscale"></li>
+						<li><a href="#"></a><img src="icons/fb1.png" class="image-40x40 grayscale"></li>
 						<li><a href="#"></a><img src="icons/tw.png" class="image-40x40 grayscale"></li>
 						<li><a href="#"></a><img src="icons/yt.png" class="image-40x40 grayscale"></li>
 						<li><a href="#"></a><img src="icons/rss.png" class="image-40x40 grayscale"></li>
 					</ul>
 				</div>
-				
+				<div>
+					<a href="#" class="title">Some web name</a>
+					<p class="desc">this web is about some thing and we create then for free</p>
+					<a href="#" class="url">https://www.youtube.com/</a>
+					<div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="div-resize" id="d2">
+				<div class="image-resize-bg">
+					<img width="459" height="330" src="images/web-1.png" class="image-resize">
+					<ul class="image-action">
+						<li><a href="#"></a><img src="icons/fb1.png" class="image-40x40 grayscale"></li>
+						<li><a href="#"></a><img src="icons/tw.png" class="image-40x40 grayscale"></li>
+						<li><a href="#"></a><img src="icons/yt.png" class="image-40x40 grayscale"></li>
+						<li><a href="#"></a><img src="icons/rss.png" class="image-40x40 grayscale"></li>
+					</ul>
+				</div>
+				<div>
+					<a href="#" class="title">Some web name</a>
+					<p class="desc">this web is about some thing and we create then for free</p>
+					<a href="#" class="url">https://www.youtube.com/</a>
+					<br>
+					<a href="#" class="url">https://www.youtube.com/</a>
+					<div>
+						
+					</div>
+				</div>
 			</div>
 			<div class="div-resize" id="d3">
 				<div class="image-resize-bg">
@@ -146,7 +189,15 @@
 						<li><a href="#"></a><img src="icons/fb.png" class="action-image image-40x40 grayscale"></li>
 						<li><a href="#"></a><img src="icons/yt.png" class="action-image image-40x40 grayscale"></li>
 					</ul>
+				</div>
+				<div>
+					<a href="#" class="title">Some web name</a>
+					<p class="desc">this web is about some thing and we create then for free</p>
+					<a href="#" class="url">https://www.youtube.com/</a>
+					<div>
+						
 					</div>
+				</div>
 				
 			</div>
 			<div class="div-resize" id="d1">
@@ -156,7 +207,15 @@
 						<li><a href="#"></a><img src="icons/yt.png" class="action-image image-40x40 grayscale"></li>
 
 					</ul>
+				</div>
+				<div>
+					<a href="#" class="title">Some web name</a>
+					<p class="desc">this web is about some thing and we create then for free</p>
+					<a href="#" class="url">https://www.youtube.com/</a>
+					<div>
+						
 					</div>
+				</div>
 				
 			</div>
 			<div class="div-resize" id="d2">
@@ -174,9 +233,15 @@
 			
 			 
 			  <!-- tab "panes" -->
-			<div class="panes footer-content">
-			    <div class="x">
-			    	pane 1 content
+			<div class="footer-content">
+			    <div class="x active">
+			    	<div class="div-50">
+			    	asd
+			    	</div>
+
+			    	<div class="div-50">
+			    	fdf
+			    	</div>
 			    </div>
 			    <div class="y">
 			    	pane 2 content
@@ -188,13 +253,26 @@
 			    	
 			    </div>
 			</div>
+			<div class="bottom-menu">
+				<ul class="footer-menu">
+				    <li><a href="#a">Tab 1</a></li>
+				    <li><a href="#a">Tab 2</a></li>
+				    <li><a href="#a">Tab 3</a></li>
+				    <li><a href="#a">Tab n</a></li>
+				    <li><a href="#a">Tab 3</a></li>
+				</ul>
+				
+				<ul class="footer-menu-small">
+					<li><a href="#a">Tab 1</a></li>
+				    <li><a href="#a">Tab 2</a></li>
+				    <li><a href="#a">Tab 3</a></li>
+				    <li><a href="#a">Tab n</a></li>
+				    <li><a href="#a">Tab 3</a></li>
+				    <li><a href="#a">Tab n</a></li>
+				</ul>
 
-			<ul class="tabs footer-menu" id="a">
-			    <li><a href="#a">Tab 1</a></li>
-			    <li><a href="#a">Tab 2</a></li>
-			    <li><a href="#a">Tab 3</a></li>
-			    <li><a href="#a">Tab n</a></li>
-			</ul>
+
+			</div>
 		</div>
 		</footer>
 		</div>
