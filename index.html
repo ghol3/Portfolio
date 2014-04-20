@@ -34,14 +34,16 @@
 	-->
 		<script>
 		$(document).ready(function() {
+			var index = 0;
+			changeId(index);
 			$(".footer-menu > li").click(function(){
-				var index = $(".footer-menu > li").index(this);
-				changeFooter(index);
+				index = $(".footer-menu > li").index(this);
+				changeId(index);
 
 			});
 			$(".footer-menu-small > li").click(function(){
-				var index = $(".footer-menu-small > li").index(this);
-				changeFooter(index);
+				index = $(".footer-menu-small > li").index(this);
+				changeId(index);
 			});
 
 			function changeFooter(index){
@@ -50,6 +52,17 @@
 				el.addClass('active');
 				$("#page").css("padding-bottom", $(".footer-content").height() + 15);
 			}
+
+			function changeId(index){
+				$(".footer-content > div#active").attr('id', 'none');
+				var el = $(".footer-content > div").eq(index);
+				el.attr('id', 'active');
+				$("#page").css("padding-bottom", $(".footer-content").height() + 15);
+			}
+
+			$(window).resize(function() {
+			  changeId(index);
+			});
 		});
 		</script>
 		<script type="text/javascript">
@@ -234,24 +247,45 @@
 			 
 			  <!-- tab "panes" -->
 			<div class="footer-content">
-			    <div class="x active">
-			    	<div class="div-50">
-			    	asd
-			    	</div>
-
-			    	<div class="div-50">
-			    	fdf
-			    	</div>
-			    </div>
-			    <div class="y">
-			    	pane 2 content
-			    </div>
-			    <div class="z">
-			    	pane 3 content
-			    </div>
-			    <div class="footer-img">
+				<div class="footer-img" id="active">
 			    	
 			    </div>
+			    <div id="none">
+			    	<div class="div-25">
+				    	<h2 class="color-blue">Reference</h2>
+				    	<p>
+				    		DASDASDasd asd asd asmd askjhdgas jhdgahsdg ajgd ajhdg ajhsgd ajssdga sjhdgasjhd sjdhga ssjdhgas djashdg asjhdg asjdhgas djhasg djashgd ajshgd asjhdg asjhdg asjhdgas hdgjhasdg
+				    	</p>
+			    	</div>
+
+			    	<div class="div-25">
+				    	<h2>Reference</h2>
+				    	<p>
+				    		DASDASDasd asd asd asmd askjhdgas jhdgahsdg ajgd ajhdg ajhsgd ajssdga sjhdgasjhd sjdhga ssjdhgas djashdg asjhdg asjdhgas djhasg djashgd ajshgd asjhdg asjhdg asjhdgas hdgjhasdg
+				    	</p>
+			    	</div>
+
+			    	<div class="div-25">
+				    	<h2>Reference</h2>
+				    	<p>
+				    		DASDASDasd asd asd asmd askjhdgas jhdgahsdg ajgd ajhdg ajhsgd ajssdga sjhdgasjhd sjdhga ssjdhgas djashdg asjhdg asjdhgas djhasg djashgd ajshgd asjhdg asjhdg asjhdgas hdgjhasdg
+				    	</p>
+			    	</div>
+
+			    	<div class="div-25">
+				    	<h2>Reference</h2>
+				    	<p>
+				    		DASDASDasd asd asd asmd askjhdgas jhdgahsdg ajgd ajhdg ajhsgd ajssdga sjhdgasjhd sjdhga ssjdhgas djashdg asjhdg asjdhgas djhasg djashgd ajshgd asjhdg asjhdg asjhdgas hdgjhasdg klajds lkajsd laksjd lasdj aslkdjask dj laksdj laskdjalskd jaslkd jaskld jaslkdj asldj asldja
+				    	</p>
+			    	</div>
+			    </div>
+			    <div class="" id="none">
+			    	pane 2 content
+			    </div>
+			    <div class="" id="none">
+			    	pane 3 content
+			    </div>
+			    
 			</div>
 			<div class="bottom-menu">
 				<ul class="footer-menu">

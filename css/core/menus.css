@@ -212,7 +212,6 @@
 */
 .footer-content{
 	width: 100%;
-	max-height: 300px;
 
 }
 
@@ -229,16 +228,17 @@
 	width: 100%;
 	border-top: 1px solid #0084b4;
 	bottom: 0;
+	max-height: 30px;
 	position: absolute;
 	background: #e1e3e4;
 }
 
-.footer-content div{
-	display: none;
+.footer-content #active{
 	width: 100%;
 }
 
-.active{
+#active{
+	margin-bottom: 50px;
 	display: inline-block !important;
 
 }
@@ -254,6 +254,9 @@
 	height: 300px;
 }
 
+#none{
+	display: none;
+}
 
 
 
